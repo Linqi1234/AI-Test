@@ -1,0 +1,181 @@
+ .App {
+  text-align: center;
+}
+
+.checkBox {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+ 
+
+ /* App.css */
+
+/* App.css */
+
+/* App.css */
+
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #EBFCFF;
+}
+
+.App {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #cccccc;
+  height: 70vh; /* 高度占屏幕的40% */
+  width: calc(70vh * 1.5); /* 宽度为高度的1.5倍 */
+  background-color: #ececec;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3e3e;
+  margin-bottom: 1rem;
+}
+
+/* .subtitle {
+  
+  background-color: #62aec1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  
+} */
+
+.subtitle {
+  background-color: #62aec1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative; /* 使其可以定位 */
+}
+
+@keyframes bounce1 {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-10px); }
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+}
+
+@keyframes exit1 {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes exit2 {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(-360deg); opacity: 0; }
+}
+
+@keyframes moveTogether {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(80px); } /* 调整移动距离 */
+}
+
+@keyframes moveRemaining {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50px); } /* 调整移动距离 */
+}
+
+.bounce1 {
+  display: inline-block;
+  animation: bounce1 1s infinite; /* 持续1秒 */
+}
+
+.bounce2 {
+  display: inline-block;
+  animation: bounce2 1s infinite; /* 持续1秒 */
+}
+
+.exit1 {
+  color:#ff3e3e;
+  animation: exit1 1.6s forwards; /* 离开动画 */
+}
+
+.exit2 {
+  color:#ff3e3e;
+  animation: exit2 2s forwards; /* 离开动画 */
+}
+
+.moveTogether {
+  display: inline-block; /* 确保是块级元素 */
+  animation: moveTogether 1s forwards; /* 一起移动的动画 */
+  animation-delay: 4s; /* 延迟0.5秒后开始移动 */
+}
+
+.moveRemaining {
+  display: inline-block; /* 确保是块级元素 */
+  animation: moveRemaining 1s forwards; /* 平移动画 */
+  animation-delay: 4s; /* 在“Very”和“Easy”消失后1.5秒开始移动 */
+}
+
+
+.game-content {
+  flex-grow: 1;
+  margin-top: 20px;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  overflow: auto;
+}
+

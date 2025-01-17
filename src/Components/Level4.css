@@ -1,0 +1,115 @@
+.game-frame {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; 
+}
+
+.bedroom-background {
+  background-image: url('../images/bedroom.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.wedding-background {
+  background-image: url('../images/wedding_background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.frame {
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.options-left,
+.options-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.options-left img,
+.options-right img {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 60px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+.options-left img.selected,
+.options-right img.selected {
+  border-color: black;
+  border-width: 3px;
+}
+
+.character {
+  position: absolute;
+  width: 90px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 47%;
+
+}
+
+.character img {
+  position: absolute;
+  height: 240px;
+}
+
+.comment-section {
+  margin-top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.wedding-scene {
+  display: flex;
+  align-items: center;
+}
+
+.character .shoes {
+  z-index: 1; 
+}
+
+.character .dress {
+  z-index: 2; 
+}
+
+.character .hair {
+  z-index: 3; 
+}
+
+
+/* 婚礼场景的女生样式 */
+.wedding-character {
+  width: 250px; 
+  height: 400px;
+  display: flex;
+  align-items: center;
+  animation: moveToCenter 1s forwards ease-in-out;
+}
+
+.wedding-character img {
+  position: absolute;
+  height: 380px;
+}
+
+/* 婚礼动画 */
+@keyframes moveToCenter {
+  0% {
+    transform: translateX(-150px); 
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
