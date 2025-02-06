@@ -4,17 +4,6 @@
   overflow: hidden; 
 }
 
-.bedroom-background {
-  background-image: url('../images/bedroom.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.wedding-background {
-  background-image: url('../images/wedding_background.png');
-  background-size: cover;
-  background-position: center;
-}
 
 
 .frame {

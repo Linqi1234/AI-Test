@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import LevelLayout from './LevelLayout';
 import './Level4.css';
-import bedroomBg from '../images/bedroom.png';
-import weddingBg from '../images/wedding_background.png';
 
 const options = {
   hair: {
@@ -22,7 +20,12 @@ const options = {
   }
 };
 
+const bedroomBg = `${process.env.PUBLIC_URL}/images/bedroom.png`;
+const weddingBg = `${process.env.PUBLIC_URL}/images/wedding_background.png`;
+
+
 function Level4({ onNextLevel }) {
+
   const [selectedOptions, setSelectedOptions] = useState({
     hair: null,
     dress: null,

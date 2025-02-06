@@ -8,7 +8,8 @@ import Level5 from './Level5';
 import Level6 from './Level6';
 import FinalResult from './FinalResult';
 import '../App.css';
-import { initializeSerialConnection, sendResultToArduino, closeSerialConnection } from './serialHelper';
+import { sendResultToArduino, closeSerialConnection } from './serialHelper';
+// import { initializeSerialConnection} from './serialHelper';
 
 function Game() {
   const [hasVerified, setHasVerified] = useState(false); // 是否通过初始验证
@@ -36,7 +37,7 @@ function Game() {
 
   // 用户点击按钮以初始化串口连接
   const handleSerialConnection = async () => {
-    await initializeSerialConnection();
+  //  await initializeSerialConnection();
     setIsSerialConnected(true);
   }; 
 
