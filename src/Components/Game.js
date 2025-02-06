@@ -38,7 +38,7 @@ function Game() {
   const handleSerialConnection = async () => {
     await initializeSerialConnection();
     setIsSerialConnected(true);
-  };
+  }; 
 
   // 处理游戏结束
   const endGame = () => {
@@ -69,18 +69,18 @@ function Game() {
   };
 
   // 在组件卸载时清理串口连接
-  useEffect(() => {
+ useEffect(() => {
     return () => {
       closeSerialConnection();
     };
-  }, []);
+  }, []);  
 
   return (
     <div className="game-container">
       {!isSerialConnected ? (
         // <button onClick={handleSerialConnection}>Run the test</button>
         <button
-  onClick={handleSerialConnection}
+   onClick={handleSerialConnection}
   style={{
     background: "none",
     border: "2px solid lightgray",
