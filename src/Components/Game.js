@@ -46,14 +46,14 @@ function Game() {
     ? (
         <div>
             <h3 style={{ fontSize:'50px',fontWeight:'heavy', color: 'green' }}>Congratulations</h3>
-            <img src="/images/human.png" alt="Human Icon" style={{ width: '30%', height: '30%', padding: '10px' }} />
+            <img src={`${process.env.PUBLIC_URL}/images/human.png`} alt="Human Icon" style={{ width: '30%', height: '30%', padding: '10px' }} />
             <p>You have successfully passed the competency test.<br></br> We are pleased to confirm that you are human and have been granted access to this area. We wish you a pleasant day ahead. Remember, you are human, and your companions are also human. Should you have any inquiries, please feel free to contact our official personnel.</p>
         </div>
     ) 
     : (
         <div>
             <h3 style={{ fontSize:'50px',fontWeight:'heavy', color: 'red' }}>Warning</h3>
-            <img src="/images/nonhuman.png" alt="Non-Human Icon" style={{ width: '30%', height: '30%', padding: '10px' }} />
+            <img src={`${process.env.PUBLIC_URL}/images/nonhuman.png`} alt="Non-Human Icon" style={{ width: '30%', height: '30%', padding: '10px' }} />
             <p>We regret to inform you that our system has determined you are not human. <br /> Non-human entities will be denied entry and will face immediate termination protocols. Please remain calm and, while awaiting the processing of your results, proceed to the designated area with your receipt. Thank you for your cooperation; you will find this experience most enlightening.</p>
         </div>
     );

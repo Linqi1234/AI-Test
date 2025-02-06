@@ -94,7 +94,7 @@ function Level6({ onNextLevel }) {
               style={{
                 width: `${gridSize}px`,
                 height: `${gridSize}px`,
-                backgroundImage: cell === 'R' ? 'url(/images/road.png)' : 'url(/images/grass.png)',
+                backgroundImage: cell === 'R' ? `url(${process.env.PUBLIC_URL}/images/road.png)` : `url(${process.env.PUBLIC_URL}/images/grass.png)`,
                 backgroundSize: 'cover',
                 display: 'flex',
                 justifyContent: 'center',

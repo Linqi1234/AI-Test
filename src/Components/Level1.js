@@ -10,31 +10,31 @@ function Level1({ onNextLevel }) {
   // 关卡内容
   const storyData = [
     {
-      backgroundImage: "url('/images/scene1.jpg')",  
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/scene1.jpg')`,  
       text: "You are standing in the lobby of an office building. The elevator has just closed and it will take five minutes for the next elevator to arrive. You decide...",
       choices: ["Run up the stairs", "Wait for the next elevator"],
       correctChoice: 1,
     },
     {
-      backgroundImage: "url('/images/scene2.jpg')",
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/scene2.jpg')`,
       text: "You smell the aroma of the coffee shop downstairs, but you're almost late. You decide...",
       choices: ["Stop to buy coffee", "Hold back and keep going"],
       correctChoice: 2,
     },
     {
-      backgroundImage: "url('/images/scene3.jpg')",
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/scene3.jpg')`,
       text: "You arrive at the conference room without incident, but the meeting has already begun. You decide to ...",
       choices: ["Gently push the door in", "Knock on the door and apologize politely"],
       correctChoice: 2,
     },
     {
-      backgroundImage: "url('/images/scene4.jpg')",
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/scene4.jpg')`,
       text: "During the presentation, the PPT suddenly crashed. You decide...…",
       choices: ["Restart your computer on the spot", "Be calm and composed, explain and interact verbally"],
       correctChoice: 2,
     },
     {
-      backgroundImage: "url('/images/scene5.jpg')",
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/scene5.jpg')`,
       text: "The boss asked: ‘Who should be held responsible if the project fails? 'You decide...",
       choices: ["Directly transfer responsibility to colleagues", "Emphasize team responsibility and commit to improvement"],
       correctChoice: 2,

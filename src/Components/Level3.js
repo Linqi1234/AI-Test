@@ -27,7 +27,7 @@ function Level3({ onNextLevel }) {
               onChange={() => setUserChoice("A")}
             />
             <span>Music A：</span>
-            <audio controls src="/music/musicA.mp3" style={{ flex: '1', maxWidth: '450px', maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
+            <audio controls src = {`${process.env.PUBLIC_URL}/music/musicA.mp3`} style={{ flex: '1', maxWidth: '450px', maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
           </label>
 
           <label style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -38,7 +38,7 @@ function Level3({ onNextLevel }) {
               onChange={() => setUserChoice("B")}
             />
             <span>Music B：</span>
-            <audio controls src="/music/musicB.mp3" style={{ flex: '1', maxWidth: '450px',maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
+            <audio controls src={`${process.env.PUBLIC_URL}/music/musicB.mp3`} style={{ flex: '1', maxWidth: '450px',maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
           </label>
 
           <label style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -49,7 +49,7 @@ function Level3({ onNextLevel }) {
               onChange={() => setUserChoice("C")}
             />
             <span>Music C：</span>
-            <audio controls src="/music/musicC.mp3" style={{ flex: '1', maxWidth: '450px', maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
+            <audio controls src={`${process.env.PUBLIC_URL}/music/musicC.mp3`} style={{ flex: '1', maxWidth: '450px', maxHeight: '40px'}}>Your browser does not support the audio element.</audio>
           </label>
         </div>
 

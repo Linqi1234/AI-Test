@@ -87,14 +87,14 @@ import LevelLayout from './LevelLayout';
 
 function Level2({ onNextLevel }) {
   const items = [
-    { id: 'sailboat', src: '/images/sailboat.jpg', clickable: false },
-    { id: 'paddles', src: '/images/paddles.jpg', clickable: false },
-    { id: 'snail', src: '/images/snail.jpg', clickable: true },
-    { id: 'car', src: '/images/car.jpg', clickable: true },
-    { id: 'doorknob', src: '/images/doorknob.jpg', clickable: true },
-    { id: 'door', src: '/images/door.jpg', clickable: true },
-    { id: 'shell', src: '/images/shell.jpg', clickable: true },
-    { id: 'boot', src: '/images/boot.jpg', clickable: true },
+    { id: 'sailboat', src: `${process.env.PUBLIC_URL}/images/sailboat.jpg`, clickable: false },
+    { id: 'paddles', src: `${process.env.PUBLIC_URL}/images/paddles.jpg`, clickable: false },
+    { id: 'snail', src: `${process.env.PUBLIC_URL}/images/snail.jpg`, clickable: true },
+    { id: 'car', src: `${process.env.PUBLIC_URL}/images/car.jpg`, clickable: true },
+    { id: 'doorknob', src: `${process.env.PUBLIC_URL}/images/doorknob.jpg`, clickable: true },
+    { id: 'door', src: `${process.env.PUBLIC_URL}/images/door.jpg`, clickable: true },
+    { id: 'shell', src: `${process.env.PUBLIC_URL}/images/shell.jpg`, clickable: true },
+    { id: 'boot', src: `${process.env.PUBLIC_URL}/images/boot.jpg`, clickable: true },
   ];
 
   const [selectedItems, setSelectedItems] = useState([]);

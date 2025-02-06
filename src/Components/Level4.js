@@ -6,18 +6,18 @@ import weddingBg from '../images/wedding_background.png';
 
 const options = {
   hair: {
-    images: ['images/hair1.png', 'images/hair2.png'],
-    wearImages: ['images/hair_wear1.png', 'images/hair_wear2.png'],
+    images: [`${process.env.PUBLIC_URL}/images/hair1.png`, `${process.env.PUBLIC_URL}/images/hair2.png`],
+    wearImages: [`${process.env.PUBLIC_URL}/images/hair_wear1.png`, `${process.env.PUBLIC_URL}/images/hair_wear2.png`],
     comments: ['This hairstyle is sleek and perfect!', 'Bold choice! It’ll surely turn heads.']
   },
   dress: {
-    images: ['images/dress1.png', 'images/dress2.png'],
-    wearImages: ['images/dress_wear1.png', 'images/dress_wear2.png'],
+    images: [`${process.env.PUBLIC_URL}/images/dress1.png`, `${process.env.PUBLIC_URL}/images/dress2.png`],
+    wearImages: [`${process.env.PUBLIC_URL}/images/dress_wear1.png`, `${process.env.PUBLIC_URL}/images/dress_wear2.png`],
     comments: ['You look amazing in this dress!', 'Aww, not a wise choice.']
   },
   shoes: {
-    images: ['images/shoes1.png', 'images/shoes2.png'],
-    wearImages: ['images/shoes_wear1.png', 'images/shoes_wear2.png'],
+    images: [`${process.env.PUBLIC_URL}/images/shoes1.png`, `${process.env.PUBLIC_URL}/images/shoes2.png`],
+    wearImages: [`${process.env.PUBLIC_URL}/images/shoes_wear1.png`, `${process.env.PUBLIC_URL}/images/shoes_wear2.png`],
     comments: ['These shoes are killer! They totally complete the look!', "I don't think that's the right one."]
   }
 };
@@ -113,7 +113,7 @@ function Level4({ onNextLevel }) {
 
         {/* 根据场景切换不同的女生样式 */}
         <div className={scene === 'wedding' ? 'wedding-character' : 'character'}>
-          <img src="/images/girl_base.png" alt="Girl base" />
+          <img src={`${process.env.PUBLIC_URL}/images/girl_base.png`} alt="Girl base" />
           {selectedOptions.hair !== null && <img src={options.hair.wearImages[selectedOptions.hair]} alt="Selected Hair" className="hair" />}
           {selectedOptions.dress !== null && <img src={options.dress.wearImages[selectedOptions.dress]} alt="Selected Dress" className="dress" />}
           {selectedOptions.shoes !== null && <img src={options.shoes.wearImages[selectedOptions.shoes]} alt="Selected Shoes" className="shoes" />}
