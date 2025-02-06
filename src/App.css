@@ -31,13 +31,6 @@
 
  
 
- /* App.css */
-
-/* App.css */
-
-/* App.css */
-
-/* App.css */
 
 * {
   margin: 0;
@@ -63,8 +56,8 @@ html, body {
   flex-direction: column;
   align-items: center;
   border: 2px solid #cccccc;
-  height: 70vh; /* 高度占屏幕的40% */
-  width: calc(70vh * 1.5); /* 宽度为高度的1.5倍 */
+  height: 70vh; 
+  width: calc(70vh * 1.5);
   background-color: #ececec;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -101,7 +94,7 @@ html, body {
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
-  position: relative; /* 使其可以定位 */
+  position: relative; 
 }
 
 @keyframes bounce1 {
@@ -127,44 +120,44 @@ html, body {
 
 @keyframes moveTogether {
   0% { transform: translateX(0); }
-  100% { transform: translateX(80px); } /* 调整移动距离 */
+  100% { transform: translateX(80px); } 
 }
 
 @keyframes moveRemaining {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50px); } /* 调整移动距离 */
+  100% { transform: translateX(-50px); } 
 }
 
 .bounce1 {
   display: inline-block;
-  animation: bounce1 1s infinite; /* 持续1秒 */
+  animation: bounce1 1s infinite; 
 }
 
 .bounce2 {
   display: inline-block;
-  animation: bounce2 1s infinite; /* 持续1秒 */
+  animation: bounce2 1s infinite; 
 }
 
 .exit1 {
   color:#ff3e3e;
-  animation: exit1 1.6s forwards; /* 离开动画 */
+  animation: exit1 1.6s forwards; 
 }
 
 .exit2 {
   color:#ff3e3e;
-  animation: exit2 2s forwards; /* 离开动画 */
+  animation: exit2 2s forwards; 
 }
 
 .moveTogether {
-  display: inline-block; /* 确保是块级元素 */
-  animation: moveTogether 1s forwards; /* 一起移动的动画 */
-  animation-delay: 4s; /* 延迟0.5秒后开始移动 */
+  display: inline-block; 
+  animation: moveTogether 1s forwards; 
+  animation-delay: 4s; 
 }
 
 .moveRemaining {
-  display: inline-block; /* 确保是块级元素 */
-  animation: moveRemaining 1s forwards; /* 平移动画 */
-  animation-delay: 4s; /* 在“Very”和“Easy”消失后1.5秒开始移动 */
+  display: inline-block; 
+  animation: moveRemaining 1s forwards; 
+  animation-delay: 4s; 
 }
 
 

@@ -45,12 +45,12 @@ function App() {
     const timer = setTimeout(() => {
       setIsExiting(true);
       const exitTimer = setTimeout(() => {
-        setTogetherMoving(true); // 移动🤡和“A”
+        setTogetherMoving(true); 
         const remainingTimer = setTimeout(() => {
-          setRemainingMoving(true); // 移动剩余文本
-        }, 500); // 0.5秒后开始移动剩余文本
+          setRemainingMoving(true); 
+        }, 500); 
         return () => clearTimeout(remainingTimer);
-      }, 1000); // 等待退出动画结束后再移动
+      }, 1000); 
       return () => clearTimeout(exitTimer);
     }, 4000); // 4秒后开始退出动画
 
