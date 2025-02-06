@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CAPTCHA/static/css/main.b6e29dee.css",
+    "main.js": "/CAPTCHA/static/js/main.5554a0b2.js",
+    "static/media/wedding_background.png": "/CAPTCHA/static/media/wedding_background.7b8b25d3f9d70877a787.png",
+    "static/media/bedroom.png": "/CAPTCHA/static/media/bedroom.af921f833b9f2fbff528.png",
+    "index.html": "/CAPTCHA/index.html",
+    "main.b6e29dee.css.map": "/CAPTCHA/static/css/main.b6e29dee.css.map",
+    "main.5554a0b2.js.map": "/CAPTCHA/static/js/main.5554a0b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6e29dee.css",
+    "static/js/main.5554a0b2.js"
+  ]
+}
