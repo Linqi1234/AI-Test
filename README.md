@@ -1,4 +1,4 @@
-Play the CAPTCHA game on : (https://linqi1234.github.io/CAPTCHA) !!
+Play the CAPTCHA game on : [https://linqi1234.github.io/CAPTCHA](https://linqi1234.github.io/CAPTCHA) !!
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
